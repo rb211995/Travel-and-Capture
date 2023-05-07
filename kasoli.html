@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TRAVEL AND CAPTURE </title>
-    <meta name="theme-color" content="#2f9bdb">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-   <link rel="stylesheet" type="text/css" href="E:\ADCA\Travel and Capture\CSS\style.CSS">
-  </head>
-  <body>
-   <header>
-     <ul>
-    <li><h1>TRAVEL AND CAPTURE</h1></li>
-    <li class="headersearch">
-      <div class = "searchbox">
-       <input type="text" placeholder="search the destination...">
-       <ion-icon name="search-outline"></ion-icon>
-       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-     </div></li>
-    <nav>
-     <ul>
-      <li><a href="E:\ADCA\Travel and Capture\index.html">Home</a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="E:\ADCA\Travel and Capture\capture.html">Capture</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Packages</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li class="navright"><a href="E:\ADCA\Travel and Capture\signup.html">Sign Up</a></li>
-     </ul>
-    </nav>
-   </header>
-   <main>
-   <section>
-     <h2> Welcome to Kasauli <h2>
-       <p> Nestled amidst the lush greenery of the Shivalik range, Kasauli is a charming hill station in the Solan district of Himachal Pradesh.
-       </p>
-   </section>
-   <section>
-   <button onclick="hideShow()" id="k">Know More</button>
-<div id="knowmore" style="display: none" class="knowmore">
-  <p>Known for its serene beauty, colonial architecture, and panoramic views of the Himalayas, this picturesque town is a popular destination for tourists seeking peace and tranquility.
 
-Kasauli was established by the British in the mid-19th century and served as a summer retreat for colonial officials. Today, it is a quaint hill station that retains much of its colonial-era charm, with narrow winding roads, old churches, and sprawling bungalows.
+<head>
+  <meta charset="utf-8">
+  <title>TRAVEL AND CAPTURE </title>
+  <meta name="theme-color" content="#2f9bdb">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.CSS">
+</head>
 
-Whether you're looking to escape the hustle and bustle of city life, take a leisurely stroll through the town's quaint bazaars, or simply bask in the beauty of the Himalayas, Kasauli has something to offer everyone.
-<p>
-  <script src="E:\ADCA\Travel and Capture\script.js"></script>
-</div>
+<body>
+  <header>
+    <ul>
+      <li>
+        <h1>TRAVEL AND CAPTURE</h1>
+      </li>
+      <li class="headersearch">
+        <div class="searchbox">
+          <input type="text" placeholder="search the destination...">
+          <ion-icon name="search-outline"></ion-icon>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+      </li>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="./capture.html">Capture</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="navright"><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section>
+      <h2> Welcome to Kasauli <h2>
+          <p> Nestled amidst the lush greenery of the Shivalik range, Kasauli is a charming hill station in the Solan
+            district of Himachal Pradesh.
+          </p>
+    </section>
+    <section>
+      <button onclick="hideShow(document.getElementById('kasauli'))" id="k">Know More</button>
+      <div id="kasauli" style="display: none" class="knowmore">
+        <p>Known for its serene beauty, colonial architecture, and panoramic views of the Himalayas, this picturesque
+          town is a popular destination for tourists seeking peace and tranquility.
+
+          Kasauli was established by the British in the mid-19th century and served as a summer retreat for colonial
+          officials. Today, it is a quaint hill station that retains much of its colonial-era charm, with narrow winding
+          roads, old churches, and sprawling bungalows.
+
+          Whether you're looking to escape the hustle and bustle of city life, take a leisurely stroll through the
+          town's quaint bazaars, or simply bask in the beauty of the Himalayas, Kasauli has something to offer everyone.
+        <p>
+          <script src="./script.js"></script>
+      </div>
 
     </section>
     <section>
       <h1>Tourist attractions in Kasauli</h1>
       <ol>
-      <div class="destination-box" onclick="showModal('Monkey Point')">
-        <h2>Monkey Point</h2>
-        <img src="E:\ADCA\Travel and Capture\CSS\monkey POint.jpg" alt="Monkey Point">
-        <p>This is the highest point in Kasauli and offers stunning views of the surrounding mountains. The place is named after the monkey god Hanuman, and there is a small temple dedicated to him at the top.</p>           </div>
-      <div class="destination-box" onclick="showModal('Gurkha Fort')">
-        <h2>Gurkha Fort</h2>
-        <img src="E:\ADCA\Travel and Capture\CSS\gaurkha fort.jpg" alt="Gurkha Fort">
-        <p>This is a historic fort located on a hilltop in Kasauli. It was built in the 19th century by the Gurkha army and is now in ruins. Visitors can enjoy panoramic views of the valley from the fort.</p>
-      </div>
-      <div class="destination-box" onclick="showModal('Gilbert Trail')">
-        <h2>Gilbert Trail</h2>
-        <img src="E:\ADCA\Travel and Capture\CSS\Gilbert Trail.jpg" alt="Gilbert Trail">
-        <p>This is a scenic walking trail that takes visitors through the lush forests of Kasauli. It is a great place to spot birds and wildlife.</p>
-      </div>
+        <div class="destination-box" onclick="showModal('Monkey Point')">
+          <h2>Monkey Point</h2>
+          <img src="./CSS/monkey POint.jpg" alt="Monkey Point">
+          <p>This is the highest point in Kasauli and offers stunning views of the surrounding mountains. The place is
+            named after the monkey god Hanuman, and there is a small temple dedicated to him at the top.</p>
+        </div>
+        <div class="destination-box" onclick="showModal('Gurkha Fort')">
+          <h2>Gurkha Fort</h2>
+          <img src="./CSS/gaurkha fort.jpg" alt="Gurkha Fort">
+          <p>This is a historic fort located on a hilltop in Kasauli. It was built in the 19th century by the Gurkha
+            army and is now in ruins. Visitors can enjoy panoramic views of the valley from the fort.</p>
+        </div>
+        <div class="destination-box" onclick="showModal('Gilbert Trail')">
+          <h2>Gilbert Trail</h2>
+          <img src="./CSS/Gilbert Trail.jpg" alt="Gilbert Trail">
+          <p>This is a scenic walking trail that takes visitors through the lush forests of Kasauli. It is a great place
+            to spot birds and wildlife.</p>
+        </div>
       </ol>
       <ol>
         <div class="destination-box" onclick="showModal('Kasauli Brewery')">
           <h2>Kasauli Brewery</h2>
-          <img src="E:\ADCA\Travel and Capture\CSS\kasauli brewery.jpg" alt="Kasauli Brewery">
-          <p>This is the oldest distillery and brewery in Asia, established in 1820. Visitors can take a guided tour of the brewery and sample some of the finest liquors.</p>
+          <img src="./CSS/kasauli brewery.jpg" alt="Kasauli Brewery">
+          <p>This is the oldest distillery and brewery in Asia, established in 1820. Visitors can take a guided tour of
+            the brewery and sample some of the finest liquors.</p>
         </div>
       </ol>
     </section>
-  </div>
-    </main>
-    <footer>
-     <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
-    </footer>
-    </body>
-   </html>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TRAVEL AND CAPTURE </title>
-    <meta name="theme-color" content="#2f9bdb">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-   <link rel="stylesheet" type="text/css" href="E:\ADCA\Travel and Capture\CSS\style.CSS">
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  </head>
-  <body>
-   <header>
-     <ul>
-    <li><h1>TRAVEL AND CAPTURE</h1></li>
-    <li class="headersearch">
-      <div class = "searchbox">
-       <input type="text" placeholder="search the destination...">
-       <ion-icon name="search-outline"></ion-icon>
-       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-     </div></li>
+<head>
+  <meta charset="utf-8">
+  <title>TRAVEL AND CAPTURE </title>
+  <meta name="theme-color" content="#2f9bdb">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.CSS">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <nav>
-     <ul>
-      <li><a href="E:\ADCA\Travel and Capture\index.html">Home</a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="E:\ADCA\Travel and Capture\capture.html">Capture</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Packages</a></li>
-      <li><a href="#">Contact Us</a></li>
-    <li class="navright"><a href="E:\ADCA\Travel and Capture\signup.html">Sign Up</a></li>
-</ul>
-</nav>
-   </header>
-   <main>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <h1>TRAVEL AND CAPTURE</h1>
+      </li>
+      <li class="headersearch">
+        <div class="searchbox">
+          <input type="text" placeholder="search the destination...">
+          <ion-icon name="search-outline"></ion-icon>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+      </li>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="./capture.html">Capture</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="navright"><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
     <section>
-     <h2>Welcome to TRAVEL AND CAPTURE</h2>
-     <p>Explore Indian States with us and discover new adventures.</p>
-      <button onclick="hideShow ()">Learn More</button>
-<div id="learnmore" style="display: none" class="learnmore">
-<p>Our website is the perfect destination for travel enthusiasts and photography lovers alike. We offer a unique blend of stunning visuals and informative content that showcases the beauty of the world through the lens of our experienced photographers. From breathtaking landscapes to vibrant cityscapes, our website is a treasure trove of awe-inspiring images that will transport you to some of the most beautiful destinations on earth. Whether you're planning your next adventure or simply looking
- for inspiration, our website is the ultimate resource for all things travel and photography. So come explore with us and let us take you on a journey you'll never forget!
-</p></div>
-    <script src="E:\ADCA\Travel and Capture\script.js"></script>
+      <h2>Welcome to TRAVEL AND CAPTURE</h2>
+      <p>Explore Indian States with us and discover new adventures.</p>
+      <button onclick="hideShow(document.getElementById('learnmore'))">Learn More</button>
+      <div id="learnmore" style="display: none" class="learnmore">
+        <p>Our website is the perfect destination for travel enthusiasts and photography lovers alike. We offer a unique
+          blend of stunning visuals and informative content that showcases the beauty of the world through the lens of
+          our experienced photographers. From breathtaking landscapes to vibrant cityscapes, our website is a treasure
+          trove of awe-inspiring images that will transport you to some of the most beautiful destinations on earth.
+          Whether you're planning your next adventure or simply looking
+          for inspiration, our website is the ultimate resource for all things travel and photography. So come explore
+          with us and let us take you on a journey you'll never forget!
+        </p>
+      </div>
+      <script src="./script.js"></script>
     </section>
     <section>
       <h1>Travel Photography</h1>
@@ -56,34 +67,23 @@
           <li class="list" data-filter="Pushkar">Pushkar</li>
         </ul>
         <div class="product">
-          <div class="itembox pushkar 1"><img src="#"></div>
-      </div>
+          <div class="itembox Jaipur"><img src="./images/jaipur/karol tibba.jpg"></div>
+          <div class="itembox Shimla"><img src="./images/jaipur/karol tibba.jpg"></div>
+          <div class="itembox Chitkul"><img src="./images/jaipur/karol tibba.jpg"></div>
+          <div class="itembox Chitkul"><img src="./images/jaipur/karol tibba.jpg"></div>
+          <div class="itembox Jalori Pass"><img src="./images/jaipur/karol tibba.jpg"></div>
+          <div class="itembox Pushkar"><img src="./images/jaipur/karol tibba.jpg"></div>
+        </div>
+      </section>
     </section>
-  </section>
-      <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-      <script type="text/javascript">
-      $(document).ready(function(){
-        $('.list').click(function(){
-          const value = $(this).attr('data-filter');
-          if (value== 'all')
-          {
-            $('.itembox').show('1000');
-          }
-          else{
-            $('.itembox').not('.'+value).hide('1000');
-            $('.itembox').filter('.'+value).show('1000');
-          }
-        });
+    <script type="text/javascript" src="./capture-script.js">
 
-        // add active class on selected items
-        $('.list').click(function(){
-          $(this).addClass('active').siblings().removeClass('active');
-        });
-      });
-      </script>
-    </main>
-    <footer>
-     <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
-    </footer>
-   </body>
-   </html>
+    </script>
+
+  </main>
+  <footer>
+    <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TRAVEL AND CAPTURE </title>
-    <meta name="theme-color" content="#2f9bdb">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-   <link rel="stylesheet" type="text/css" href="E:\ADCA\Travel and Capture\CSS\style.CSS">
-  </head>
-  <body>
-   <header>
-     <ul>
-    <li><h1>TRAVEL AND CAPTURE</h1></li>
-    <li class="headersearch">
-      <div class = "searchbox">
-       <input type="text" placeholder="search the destination...">
-       <ion-icon name="search-outline"></ion-icon>
-       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-     </div></li>
 
-    <nav>
-     <ul>
-      <li><a href="E:\ADCA\Travel and Capture\index.html">Home</a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="E:\ADCA\Travel and Capture\capture.html">Capture</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Packages</a></li>
-      <li><a href="#">Contact Us</a></li>
-    <li class="navright"><a href="E:\ADCA\Travel and Capture\signup.html">Sign Up</a></li>
-</ul>
-</nav>
-   </header>
-   <main>
+<head>
+  <meta charset="utf-8">
+  <title>TRAVEL AND CAPTURE </title>
+  <meta name="theme-color" content="#2f9bdb">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.CSS">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <h1>TRAVEL AND CAPTURE</h1>
+      </li>
+      <li class="headersearch">
+        <div class="searchbox">
+          <input type="text" placeholder="search the destination...">
+          <ion-icon name="search-outline"></ion-icon>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+      </li>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="./capture.html">Capture</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="navright"><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
     <section>
-     <h2>Welcome to Morni Hills</h2>
-     <p>Morni Hills is a beautiful hill station located in the Panchkula district of the Indian state of Haryana..</p>
-      <button onclick="hideShow ()" id="k">Know More</button>
-<div id="knowmore" style="display: none" class="knowmore">
-  <p> It is situated at an altitude of 1,220 meters above sea level and is known for its serene and picturesque landscapes. The lush greenery, the misty mountains, and the fresh air make Morni Hills a perfect destination for nature lovers and adventure enthusiasts. It is also famous for its trekking trails, boating, and camping facilities. The tranquility and serenity of this place make it an ideal getaway from the hustle and bustle of city life.
-      <script src="E:\ADCA\Travel and Capture\script.js"></script>
+      <h2>Welcome to Morni Hills</h2>
+      <p>Morni Hills is a beautiful hill station located in the Panchkula district of the Indian state of Haryana..</p>
+      <button onclick="hideShow(document.getElementById('knowmore'))" id="k">Know More</button>
+      <div id="knowmore" style="display: none" class="knowmore">
+        <p> It is situated at an altitude of 1,220 meters above sea level and is known for its serene and picturesque
+          landscapes. The lush greenery, the misty mountains, and the fresh air make Morni Hills a perfect destination
+          for nature lovers and adventure enthusiasts. It is also famous for its trekking trails, boating, and camping
+          facilities. The tranquility and serenity of this place make it an ideal getaway from the hustle and bustle of
+          city life.
+          <script src="./script.js"></script>
+    </section>
+    <section>
+      <section>
+        <h1>Tourist attractions in Morni Hills</h1>
+        <ol>
+          <div class="destination-box" onclick="showModal('Morni Fort')">
+            <h2>Morni Fort</h2>
+            <img src="./CSS/morni fort.jpg" alt="Morni Fort">
+            <p>This fort is located on a hilltop and offers a panoramic view of the surrounding area. It is a popular
+              spot for trekking and camping.</p>
+          </div>
+          <div class="destination-box" onclick="showModal('Tikkar Taal')">
+            <h2>Tikkar Taal</h2>
+            <img src="./CSS/tikkar taal.jpg" alt="Tikkar Taal">
+            <p>This is a small lake located in the foothills of the Shivalik range. It is a popular spot for picnics and
+              boating.</p>
+          </div>
+          <div class="destination-box" onclick="showModal('Gurudwara Nada Sahib')">
+            <h2>Gurudwara Nada Sahib</h2>
+            <img src="./CSS/guruduara nada sahib.jpg" alt="Guruduwara Nada Sahib">
+            <p>his is a historical Sikh shrine located on the banks of the Ghaggar River. It is an important pilgrimage
+              site for Sikhs.</p>
+          </div>
+        </ol>
+        <ol>
+          <div class="destination-box" onclick="showModal('Mornihill Wildlife Sanctuary')">
+            <h2>Mornihill Wildlife Sanctuary</h2>
+            <img src="./CSS/morni hill wildlife santuary.jpg" alt="Mornihill Wildlife Sanctuary">
+            <p>his sanctuary is home to a variety of wildlife such as leopards, Indian hare, sambhar deer, and langurs.
+              It is a popular spot for birdwatching and nature walks.</p>
+          </div>
+        </ol>
       </section>
-        <section>
-          <section>
-           <h1>Tourist attractions in Morni Hills</h1>
-           <ol>
-           <div class="destination-box" onclick="showModal('Morni Fort')">
-             <h2>Morni Fort</h2>
-             <img src="E:\ADCA\Travel and Capture\CSS\morni fort.jpg" alt="Morni Fort">
-             <p>This fort is located on a hilltop and offers a panoramic view of the surrounding area. It is a popular spot for trekking and camping.</p>           </div>
-           <div class="destination-box" onclick="showModal('Tikkar Taal')">
-             <h2>Tikkar Taal</h2>
-             <img src="E:\ADCA\Travel and Capture\CSS\tikkar taal.jpg" alt="Tikkar Taal">
-             <p>This is a small lake located in the foothills of the Shivalik range. It is a popular spot for picnics and boating.</p>
-           </div>
-           <div class="destination-box" onclick="showModal('Gurudwara Nada Sahib')">
-             <h2>Gurudwara Nada Sahib</h2>
-             <img src="E:\ADCA\Travel and Capture\CSS\guruduara nada sahib.jpg" alt="Guruduwara Nada Sahib">
-             <p>his is a historical Sikh shrine located on the banks of the Ghaggar River. It is an important pilgrimage site for Sikhs.</p>
-           </div>
-           </ol>
-           <ol>
-             <div class="destination-box" onclick="showModal('Mornihill Wildlife Sanctuary')">
-               <h2>Mornihill Wildlife Sanctuary</h2>
-               <img src="E:\ADCA\Travel and Capture\CSS\morni hill wildlife santuary.jpg" alt="Mornihill Wildlife Sanctuary">
-               <p>his sanctuary is home to a variety of wildlife such as leopards, Indian hare, sambhar deer, and langurs. It is a popular spot for birdwatching and nature walks.</p>
-             </div>
-           </ol>
-      </section>
-     </main>
-     <footer>
-      <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
-     </footer>
-    </body>
-    </html>
+  </main>
+  <footer>
+    <p>&copy; TRAVEL AND CAPTURE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
