@@ -7,6 +7,7 @@ header {
 	background-color: #333;
 	color: #fff;
 	padding: 10px;
+	margin-right: 0%
 }
 header.headersearch {
 }
@@ -23,6 +24,7 @@ header.headersearch {
 	color: #fff;
 	padding: 10px;
 	margin-top: 10px;
+	text-align: center;
 }
 
 button {
@@ -47,7 +49,7 @@ button {
 	box-sizing: border-box;
 	font-family: sans-serif;
 	position: absolute;
-	right: 3%;
+	right: 4%;
 	width: 10px;
 	height: 10px;
 	display: inline-block;
@@ -90,7 +92,8 @@ button {
 }
 .searchbox input {
 	position: absolute;
-	width: 100%;
+	right: -8px;
+	width: 70%;
 	height: 100%;
 	padding: 10px 25px;
 	outline: none;
@@ -214,7 +217,7 @@ nav a:hover {
 }
 section {
 	padding: 20px;
-	width: 1280px;
+	width: auto;
 	margin: 40px auto;
 }
 section ul {
